@@ -141,7 +141,7 @@ export default function Event() {
     try {
       await DBService.deleteEvent(eventId);
   
-      setEvents(events.filter((event) => event.$id !== eventId));
+      setEvents((events || []).filter((event) => event.$id !== eventId));
     } catch (error) {
       console.error("Failed to delete event:", error);
       alert("Failed to delete event. Please try again.");
