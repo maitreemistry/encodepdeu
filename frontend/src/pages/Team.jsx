@@ -186,7 +186,7 @@ export function TeamCard({ imgsrc = "https://links.aryanranderiya.com/l/default_
         className="w-[170px] h-[170px] min-w-[170px] min-h-[170px] max-h-[170px] rounded-full object-cover scale-90"
       />
       <div className="flex flex-col items-center">
-        <span className="text-2xl helvetica text-center ">{name}</span>
+        <span className="text-2xl text-center font-menseal">{name}</span>
         <span className="text-lg text-foreground-400 minecraft text-wrap w-[200px] text-center">
           {position}
         </span>
