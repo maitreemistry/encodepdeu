@@ -228,7 +228,7 @@ export default function UpcomingEvents() {
             </div>
 
             <div className="flex flex-wrap gap-5 justify-center w-[100vw]">
-                {eventData
+                {(eventData || [])
                     .filter((e) => e.status == "upcoming" || e.status == "ongoing")
                     .sort((a, b) => Number(a.date) - Number(b.date))
                     .slice(0,3) 
